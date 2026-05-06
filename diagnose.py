@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-"""診斷工具：確認 Python 能不能連到 TWSE / Discord"""
 import sys
 import ssl
 import json
