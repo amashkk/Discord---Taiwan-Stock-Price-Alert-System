@@ -1,5 +1,5 @@
 {
-  "discord_webhook": "https://discord.com/api/webhooks/1501621676381573226/Nu9QBAIwV1fMrjaMeQ3yPRdNCqVtZv1Wp0LetLX7Z2vBH3JOlVqyJW3P8qFFDFgDVOrL",
+  "discord_webhook": "",
   "interval_seconds": 60,
   "market_hours_only": true,
   "watch": [
