@@ -1,29 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-台灣股市到價提醒器 (Discord 版)
-====================================
-
-使用方式：
-  1. 在 Discord 頻道建立 Webhook，把網址填到 config.json 的 discord_webhook
-  2. 編輯 config.json 加入要監控的股票
-  3. 執行: python3 stock_alert.py
-
-設定檔範例 (config.json):
-{
-  "discord_webhook": "https://discord.com/api/webhooks/...",
-  "interval_seconds": 60,
-  "market_hours_only": true,
-  "watch": [
-    {"id": "2330", "market": "tse", "above": 1100, "below": 950, "note": "台積電"},
-    {"id": "6488", "market": "otc", "above": 600,  "note": "環球晶"}
-  ]
-}
-
-market: "tse" = 上市, "otc" = 上櫃
-above / below 任一個或兩個都可以填，不想用就拿掉
-"""
-
 import json
 import os
 import ssl
