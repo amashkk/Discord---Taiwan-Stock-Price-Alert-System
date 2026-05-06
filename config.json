@@ -1,0 +1,11 @@
+{
+  "discord_webhook": "https://discord.com/api/webhooks/1501621676381573226/Nu9QBAIwV1fMrjaMeQ3yPRdNCqVtZv1Wp0LetLX7Z2vBH3JOlVqyJW3P8qFFDFgDVOrL",
+  "interval_seconds": 60,
+  "market_hours_only": true,
+  "watch": [
+    {"id": "2330",   "market": "tse", "above": 2330, "below": 2100, "note": "台積電"},
+    {"id": "2454",   "market": "tse", "above": 4000, "below": 2800, "note": "聯發科"},
+    {"id": "0050",   "market": "tse", "above": 100,  "below": 90,   "note": "元大台灣50"},
+    {"id": "00981A", "market": "tse", "above": 32,   "below": 27,   "note": "主動統一台股增長"}
+  ]
+}
