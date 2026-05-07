@@ -2,6 +2,7 @@ import sys
 import ssl
 import json
 import urllib.request
+import urllib.error
 
 ctx = ssl.create_default_context()
 try:
@@ -24,7 +25,7 @@ try:
     try:
         with urllib.request.urlopen(req, timeout=15, context=ctx) as resp:
             raw = resp.read().decode("utf-8")
-    except ssl.SSLError:
+    except (ssl.SSLError, urllib.error.URLError):
         with urllib.request.urlopen(req, timeout=15, context=ssl._create_unverified_context()) as resp:
             raw = resp.read().decode("utf-8")
     print(f"HTTP 狀態: OK")
