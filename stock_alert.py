@@ -60,7 +60,7 @@ def fetch_quotes(watch_list):
     try:
         with urllib.request.urlopen(req, timeout=15, context=_TWSE_SSL_CTX) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-    except ssl.SSLError:
+    except (ssl.SSLError, urllib.error.URLError):
         # 退路：完全跳過憑證驗證 (TWSE 資料公開，沒有敏感資訊)
         with urllib.request.urlopen(req, timeout=15, context=ssl._create_unverified_context()) as resp:
             data = json.loads(resp.read().decode("utf-8"))
